@@ -12,7 +12,7 @@ bot = commands.Bot(command_prefix='!', intents=intents)
 gradio_client = Client("https://facebook-seamless-m4t.hf.space/")
 
 # Your Discord webhook URL
-webhook_url = 'https://discord.com/api/webhooks/1149651890569760829/DMRF7rWVZvJSZjH23P4jCC7jTL6_waQJ6rozhi3i-AWfOeqN4LBunQNcLYUHtd2Agm4w'
+webhook_url = 'your_weburl'
 
 @bot.event
 async def on_ready():
@@ -42,4 +42,4 @@ async def translate(ctx, source_lang, target_lang, *, text):
     else:
         print(f"Failed to send message to the webhook. Status code: {response.status_code}")
 
-bot.run('MTEzODU0NTcwMDI0NjkyOTQyOA.GSin0Z.74xksPE_J90U8X6nOHVeUbwtKUA9nBzKjCBtcM')
+bot.run('Your_token')
